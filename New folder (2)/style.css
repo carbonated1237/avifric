@@ -50,20 +50,13 @@
 
   /* HERO */
   .hero { height: 100vh; min-height: 700px; position: relative; display: flex; align-items: flex-end; overflow: hidden; }
-  .hero-bg { 
-    position: absolute; inset: 0; 
-    background-image: url('background-image.jpeg'); 
-    background-size: cover; 
-    background-position: center 30%; 
-    background-repeat: no-repeat; 
-  }
-
+  .hero-bg { position: absolute; inset: 0; background-image: url('images/background-image.jpeg'); background-size: cover; background-position: center 30%; background-repeat: no-repeat; }
   .hero-sky { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(8,8,8,0.15) 0%, rgba(8,8,8,0.1) 30%, rgba(8,8,8,0.55) 70%, rgba(8,8,8,1) 100%); }
   .hero-horizon { position: absolute; bottom: 0; left: 0; right: 0; height: 40%; background: linear-gradient(to top, var(--black) 0%, transparent 100%); }
   .hero-lines { position: absolute; inset: 0; overflow: hidden; opacity: 0.06; }
   .hero-lines::before { content: ''; position: absolute; inset: -50%; background-image: linear-gradient(rgba(201,168,76,0.6) 1px, transparent 1px), linear-gradient(90deg, rgba(201,168,76,0.6) 1px, transparent 1px); background-size: 80px 80px; transform: perspective(600px) rotateX(55deg); transform-origin: center bottom; animation: grid-move 12s linear infinite; }
   @keyframes grid-move { 0% { background-position: 0 0; } 100% { background-position: 0 80px; } }
-  .hero-content { position: relative; z-index: 2; padding: 0 5% 100px; width: 100%; }
+  .hero-content { position: relative; z-index: 2; padding: 0 5% 90px; width: 100%; }
   .hero-eyebrow { display: flex; align-items: center; gap: 16px; margin-bottom: 28px; }
   .hero-line { display: none; width: 40px; height: 1px; background: var(--gold); }
   .hero-eyebrow span { font-size: 0.65rem; letter-spacing: 4px; text-transform: uppercase; color: var(--gold); font-weight: 500; }
